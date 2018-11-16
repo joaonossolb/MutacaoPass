@@ -44,11 +44,11 @@ if [ "$1" == "site" ];then
 	
 	echo "Atenção, em sites grandes pode demorar um pouco, se quiser para pressione ctrl+c que irá ser mostrado o que foi coletado em lista.txt"
 	if [ "$nletras" == "" ];then
-		cewl $site -u googleBot -w lista.txt
+		cewl $site -u googleBot -w lista.txt # -u Modifica o User-Agent
 	fi
 
 	if [ "$nletras" != "" ];then
-		cewl $site -u googleBot -m$nletras -w lista.txt
+		cewl $site -u googleBot -m$nletras -w lista.txt # -u Modifica o User-Agent
 	fi
 
 fi
